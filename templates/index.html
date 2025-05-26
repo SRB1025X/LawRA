@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lex - Legal Research Assistant</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-white min-h-screen text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">Lex</h1>
+          <p class="text-xs text-gray-500">Legal Research Assistant</p>
+        </div>
+      </div>
+      <a href="#" class="text-blue-700 text-sm hover:underline">View Documentation</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">AI-Powered Legal Research for Law Students</h2>
+      <p class="text-gray-600 text-lg mb-10">
+        Upload your base paper, define your research angle, and let Lex's multi-agent system find, rank, and cite relevant legal materials.
+      </p>
+    </div>
+
+    <!-- Upload Card -->
+    <form method="POST" enctype="multipart/form-data" class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8 space-y-6">
+      <div>
+        <label class="block text-sm font-medium mb-1">Base Paper (PDF)</label>
+        <input type="file" name="pdf" accept=".pdf" required
+               class="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200">
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Research Angle</label>
+        <textarea name="angle" rows="4" required
+                  class="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200"
+                  placeholder="Describe your research focus or legal question..."></textarea>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-1">Additional Keywords (optional)</label>
+        <input type="text" name="keywords"
+               class="w-full border border-gray-300 rounded px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200"
+               placeholder="Enter case names, statutes, etc.">
+      </div>
+
+      <button type="submit"
+              class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition">
+        Start AI Research
+      </button>
+    </form>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-3 gap-6 mt-16 max-w-6xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <div class="w-10 h-10 bg-blue-100 rounded-full mx-auto flex items-center justify-center mb-4">
+          <span class="text-blue-600 font-bold text-lg">1</span>
+        </div>
+        <h3 class="font-semibold text-lg mb-2">Multi-Agent System</h3>
+        <p class="text-sm text-gray-600">Seven specialized agents coordinate research: Document, Search, Citations & More.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <div class="w-10 h-10 bg-green-100 rounded-full mx-auto flex items-center justify-center mb-4">
+          <span class="text-green-600 font-bold text-lg">2</span>
+        </div>
+        <h3 class="font-semibold text-lg mb-2">Trusted Repositories</h3>
+        <p class="text-sm text-gray-600">We scan legal sources like JLPP, IJCLP, NLSJ, and IJLLR for relevance.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <div class="w-10 h-10 bg-purple-100 rounded-full mx-auto flex items-center justify-center mb-4">
+          <span class="text-purple-600 font-bold text-lg">3</span>
+        </div>
+        <h3 class="font-semibold text-lg mb-2">Smart Citations</h3>
+        <p class="text-sm text-gray-600">Bluebook formatting, relevance scoring, and citation tracing built-in.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
