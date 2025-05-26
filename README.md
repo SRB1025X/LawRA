@@ -150,11 +150,11 @@ ollama run gemma3:1b
 
 ### 📌 Argument Extraction Output
 
-![Argument Extraction Screenshot](https://github.com/Anil970198/ApexNeural-LAWRA/blob/main/home%20screen.png?raw=true)
+![Argument Extraction Screenshot](https://github.com/Anil970198/LawRA/blob/4cfccddc61347c4c94f98c9b16870731683453d5/home%20screen.png?raw=true)
 
 ### 📌 Final Citation Breakdown Output
 
-![Citation Results Screenshot](https://github.com/Anil970198/ApexNeural-LAWRA/blob/main/results.png?raw=true)
+![Citation Results Screenshot](https://github.com/Anil970198/LawRA/blob/4cfccddc61347c4c94f98c9b16870731683453d5/results.png?raw=true)
 
 
 ---
