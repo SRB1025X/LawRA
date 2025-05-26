@@ -87,8 +87,8 @@ In code, simply call `query_gemini(prompt)` using `google.generativeai` from the
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/Anil970198/ApexNeural-LAWRA.git
-cd ApexNeural-LAWRA
+git clone https://github.com/Anil970198/LawRA.git
+cd LawRA
 ```
 
 ### 2. Setup Pipenv Environment
