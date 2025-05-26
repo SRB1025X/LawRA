@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Processing - Lex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Poll the /results route every 5s
+    async function checkOutputReady() {
+      try {
+        const res = await fetch('/results');
+        if (res.status === 200) {
+          window.location.href = '/results';
+        }
+      } catch (err) {
+        console.error("Check failed", err);
+      }
+    }
+
+    setInterval(checkOutputReady, 5000);
+  </script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-white min-h-screen flex items-center justify-center px-4">
+  <div class="text-center">
+    <div class="mb-6">
+      <div class="w-16 h-16 border-4 border-blue-400 border-t-transparent rounded-full animate-spin mx-auto"></div>
+      <h2 class="text-2xl font-semibold text-gray-700 mt-4">Processing your request...</h2>
+      <p class="text-gray-500 text-sm mt-2">This may take up to a minute. Please do not refresh the page.</p>
+    </div>
+
+    <div class="w-full max-w-lg mx-auto bg-white shadow rounded p-4 mt-6">
+      <div class="mb-2 text-sm text-blue-700 font-medium">Initializing multi-agent research pipeline...</div>
+      <div class="w-full h-3 bg-gray-200 rounded">
+        <div class="h-3 bg-blue-500 rounded animate-pulse" style="width: 70%;"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
