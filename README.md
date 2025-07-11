@@ -182,3 +182,8 @@ This project is licensed under the **MIT License**.
 * Serper DevTool (for integrated web search)
 
 ---
+
+## Authors
+
+* *Shreyas* - Computer Science Student at JNTUH - [Shreyas Github](https://github.com/SRB1025X) - [Shreyas Linkedin](https://www.linkedin.com/in/srb1025x/)
+* *Anil* - Computer Science Student at JNTUH - [Anil Github](https://github.com/Anil970198) - [Anil Linkedin](https://www.linkedin.com/in/mondru-anil/)
