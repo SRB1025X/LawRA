@@ -1,6 +1,5 @@
 # ⚖️ LAWRA: THE LAW RESEARCH AGENT
-MULTI-AGENT LEGAL RESEARCH COMPANION FOR
-LAW STUDENTS
+
 
 > A Multi-Agent AI System for Structured Legal Research, Argument Extraction, and Citation Discovery
 
